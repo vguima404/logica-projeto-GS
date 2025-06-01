@@ -34,3 +34,11 @@ rotas_seguras_por_bairro = {
         "Rua Professor Veiga"
     ]
 }
+
+
+
+def exibir_zonas_de_risco():
+    print("\n Zonas de Risco de Enchente:")
+    for zona in zonas:
+        print(f"- Bairro: {zona['bairro']} | Nível de risco: {zona['risco'].capitalize()}")
+
