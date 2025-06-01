@@ -11,3 +11,26 @@ abrigos = [
     {"nome": "Escola Municipal Vereador José Fernandes da Silva", "endereco": "Rua Teresa, 1781, Alto da Serra", "capacidade": 300},
     {"nome": "CIEP 472 Candido Portinari", "endereco": "Estr. União e Indústria, 11960, Itaipava", "capacidade": 1000},
 ]
+
+rotas_seguras_por_bairro = {
+    "Centro": [
+        "Rua Marechal Deodoro (acesso direto ao shopping)",
+        "Rua do Imperador",
+        "Rua Floriano Peixoto",
+        "Rua General Osório"
+    ],
+
+    "Alto da Serra": [
+        "Rua Teresa (acesso direto à escola)",
+        "Rua Henrique Dias",
+        "Rua Bernardo de Vasconcelos",
+        "Rua Luiz Winter"
+    ],
+
+    "Itaipava": [
+        "Estrada União e Indústria",
+        "Rua Joaquim Agante Moço",
+        "Avenida Leopoldina",
+        "Rua Professor Veiga"
+    ]
+}
