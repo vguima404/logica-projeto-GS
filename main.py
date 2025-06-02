@@ -95,3 +95,14 @@ def gerar_alerta(bairro):
     if not zona_encontrada:
         print('Bairro não encontrado!')
 
+
+def buscar_rotas_seguras(bairro):
+    print(f"\n Rotas seguras para o bairro: {bairro}")
+
+    rotas = rotas_seguras_por_bairro.get(bairro, [])
+    if rotas:
+        for rota in rotas:
+            print(f"-> {rota}")
+    else:
+        print("Nenhuma segura foi cadastrada para esse bairro.")
+
