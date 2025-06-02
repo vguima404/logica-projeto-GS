@@ -10,6 +10,8 @@ abrigos = [
     {"nome": "Pátio Petrópolis Shopping", "endereco": "Rua Marechal Deodoro, 153, Centro", "capacidade": 5000},
     {"nome": "Escola Municipal Vereador José Fernandes da Silva", "endereco": "Rua Teresa, 1781, Alto da Serra", "capacidade": 300},
     {"nome": "CIEP 472 Candido Portinari", "endereco": "Estr. União e Indústria, 11960, Itaipava", "capacidade": 1000},
+    {"nome": "CPTI/FAETERJ", "endereco": "Av. Getulio Vargas, 335, Quitandinha", "capacidade": 400},
+    {"nome": "Academia Master", "endereco": "R. José Cândido, 143 - Corrêas", "capacidade": 50},
 ]
 
 rotas_seguras_por_bairro = {
@@ -32,6 +34,16 @@ rotas_seguras_por_bairro = {
         "Rua Joaquim Agante Moço",
         "Avenida Leopoldina",
         "Rua Professor Veiga"
+    ],
+    "Quitandinha": [
+        "Avenida Getúlio Vargas",
+        "Rua General Rondon",
+        "Rua Cândido Portinari"
+    ],
+    "Corrêas": [
+        "Rua Vigário Corrêa",
+        "Rua Manuel Torres",
+        "Rua Lopes Trovão"
     ]
 }
 
@@ -83,4 +95,3 @@ def gerar_alerta(bairro):
     if not zona_encontrada:
         print('Bairro não encontrado!')
 
-gerar_alerta('centro')
