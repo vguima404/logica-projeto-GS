@@ -121,3 +121,33 @@ def exibir_abrigos(bairro):
     if encontrou == False:
         print(f"Nenhum abrigo encontrado nesse bairro!")
 
+
+def menu():
+
+    while True:
+        print("1 - Exibir bairros e seus respectivos graus de risco")
+        print("2 - Visualizar se seu bairro está em estado de alerta")
+        print("3 - Buscar rotas seguras")
+        print("4 - Exibir abrigos")
+        print("5 - Sair")
+
+        opcao = input("Escolha uma opção: ")
+
+        match opcao:
+            case "1":
+                exibir_zonas_de_risco()
+
+            case "2":
+                gerar_alerta(input("Digite o bairro que deseja visualizar: "))
+
+            case "3":
+                buscar_rotas_seguras(input("Digite o bairro que deseja ir: "))
+
+            case "4":
+                exibir_abrigos(input("Digite o bairro que deseja visualizar o abrigo: "))
+
+            case "5":
+                print("Saindo...")
+                break
+
+menu()
