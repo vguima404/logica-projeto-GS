@@ -106,3 +106,18 @@ def buscar_rotas_seguras(bairro):
     else:
         print("Nenhuma segura foi cadastrada para esse bairro.")
 
+def exibir_abrigos(bairro):
+
+    encontrou = False
+
+    print(f"Abrigos disponíveis no bairro {bairro}:")
+
+    for abrigo in abrigos:
+
+        if bairro.lower() in abrigo['endereco'].lower():
+            print(f"- {abrigo['nome']} | Endereço: {abrigo['endereco']} | Capacidade: {abrigo['capacidade']}")
+            encontrou = True
+
+    if encontrou == False:
+        print(f"Nenhum abrigo encontrado nesse bairro!")
+
