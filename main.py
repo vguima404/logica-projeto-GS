@@ -50,7 +50,7 @@ rotas_seguras_por_bairro = {
 
 # Função que exibe todos os bairros e seus respectivos níveis de risco
 def exibir_zonas_de_risco():
-    print("\n Zonas de Risco de Enchente:")
+    print("\n🔍 Zonas de Risco de Enchente:")
     for zona in zonas:
         print(f"- Bairro: {zona['bairro']} | Nível de risco: {zona['risco'].capitalize()}")
 
@@ -66,7 +66,7 @@ def gerar_alerta(bairro):
 
             # Exibe alerta específico dependendo do nível de risco
             if risco == "alto":
-                print("ALERTA: Risco ALTO de enchente na sua área!")
+                print("⚠️ ALERTA: Risco ALTO de enchente na sua área!")
 
                 # Usa match-case para selecionar o bairro e recomendar abrigo e rota
                 match bairro_formatado:
@@ -86,18 +86,18 @@ def gerar_alerta(bairro):
                         break
 
             elif risco == "moderado":
-                print("Atenção: Risco MODERADO de alagamento.")
+                print("⚠️ Atenção: Risco MODERADO de alagamento.")
             else:
-                print("Sua área está SEGURA no momento!")
+                print("✅ Sua área está SEGURA no momento!")
 
     # Caso o bairro informado não esteja na lista
     if not zona_encontrada:
-        print('Bairro não encontrado!')
+        print('❌ Bairro não encontrado!')
 
 # Função que mostra as rotas seguras de um bairro específico
 def buscar_rotas_seguras(bairro):
     bairro.lower()
-    print(f"\n Rotas seguras para o bairro: {bairro.capitalize()}")
+    print(f"\n🧭 Rotas seguras para o bairro: {bairro.capitalize()}")
     rotas = rotas_seguras_por_bairro.get(bairro.capitalize(), [])  # Tenta buscar rotas para o bairro, se não encontrar, retorna uma lista vazia como padrão
 
     if rotas:
@@ -110,7 +110,7 @@ def buscar_rotas_seguras(bairro):
 def exibir_abrigos(bairro):
     encontrou = False  # Variável de controle para saber se encontrou abrigo
 
-    print(f"Abrigos disponíveis no bairro {bairro}:")
+    print(f"🏠 Abrigos disponíveis no bairro {bairro}:")
 
     for abrigo in abrigos:
         # Verifica se o nome do bairro está presente no endereço do abrigo
@@ -151,6 +151,9 @@ def menu():
             case "5":
                 print("Saindo...")
                 break  # Encerra o loop e finaliza o programa
+
+            case _:
+                print("❌ Opção inválida. Tente novamente.")
 
 # Chamada da função principal para iniciar o programa
 menu()
