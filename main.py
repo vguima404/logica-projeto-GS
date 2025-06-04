@@ -121,6 +121,21 @@ def exibir_abrigos(bairro):
     if not encontrou:
         print(f"Nenhum abrigo encontrado nesse bairro!")
 
+# Função que simula leitura do sensor de nível de água
+def simular_nivel_agua(nivel_cm):
+    print(f"\n 📏 Nível atual da água: {nivel_cm} cm")
+
+    if nivel_cm <= 100:
+        print("✅ Situação normal. Sem risco de enchente.")
+    elif nivel_cm <= 130:
+        print("⚠️ Atenção: Risco moderado de alagamento.")
+    elif nivel_cm <= 190:
+        print("🚨 Alerta: Nível de água elevado. Risco alto.")
+    else:
+        print("🔴 Emergência! Enchente em andamento! Busque abrigo imediatamente!")
+
+
+
 # Função principal que mostra um menu de opções ao usuário
 def menu():
     while True:
@@ -129,7 +144,8 @@ def menu():
         print("2 - Visualizar se seu bairro está em estado de alerta")
         print("3 - Buscar rotas seguras")
         print("4 - Exibir abrigos")
-        print("5 - Sair")
+        print("5 - Simular nível de água")
+        print("6 - Sair")
 
         # Recebe a opção do usuário
         opcao = input("Escolha uma opção: ")
@@ -149,6 +165,9 @@ def menu():
                 exibir_abrigos(input("Digite o bairro que deseja visualizar o abrigo: "))
 
             case "5":
+                simular_nivel_agua(int(input("Digite o nível de agua em cm: ")))
+
+            case "6":
                 print("Saindo...")
                 break  # Encerra o loop e finaliza o programa
 
