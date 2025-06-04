@@ -127,7 +127,7 @@ def simular_nivel_agua(nivel_cm):
 
     if nivel_cm <= 100:
         print("✅ Situação normal. Sem risco de enchente.")
-    elif nivel_cm <= 130:
+    elif nivel_cm <= 150:
         print("⚠️ Atenção: Risco moderado de alagamento.")
     elif nivel_cm <= 190:
         print("🚨 Alerta: Nível de água elevado. Risco alto.")
