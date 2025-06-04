@@ -1,3 +1,9 @@
+# Integrantes:
+
+# Felipe de Andrade Godoi - 566209
+# Raphael Naome Taketa - 562321
+# Victor Ribeiro Guimarães Lira - 566213
+
 # Lista com bairros e seus respectivos níveis de risco de enchente
 zonas = [
     {"bairro": "Centro", "risco": "alto"},
