@@ -39,5 +39,6 @@ O sistema foi desenvolvido para **auxiliar moradores de Petrópolis a tomarem de
  ```bash
  python main.py
  ```
-📌 Observação
+📌 Observação:
+
 Este sistema é uma simulação, portanto, não substitui sistemas oficiais da Defesa Civil, as rotas utilizadas não são necessariamente as melhores em casos de emergência. O sistema pode ser útil como modelo ou base de aprendizado para soluções parecidas.
