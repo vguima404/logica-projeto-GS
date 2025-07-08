@@ -42,3 +42,4 @@ O sistema foi desenvolvido para **auxiliar moradores de Petrópolis a tomarem de
 📌 Observação:
 
 Este sistema é uma simulação, portanto, não substitui sistemas oficiais da Defesa Civil, as rotas utilizadas não são necessariamente as melhores em casos de emergência. O sistema pode ser útil como modelo ou base de aprendizado para soluções parecidas.
+Essa é apenas a parte lógica do projeto, que no futuro, gostaria de transformar em uma plataforma web para uma melhor interação do usuário com o sistema.
